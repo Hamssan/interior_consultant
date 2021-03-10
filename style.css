@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap");
+
+:root {
+  --crimson-pro: "Crimson Pro";
+  --montserrat: "Montserrat";
+  --lore: "Lora";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(24, 23, 25, 1);
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 48px;
+}
+
+header span {
+  font: 14px/16px var(--crimson-pro);
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+header li {
+  display: inline;
+  font: 18px/22px var(--montserrat);
+  margin: 0 20px;
+  list-style: none;
+}
+
+header li:hover,
+.active {
+  border-bottom: 2px solid white;
+  padding: 4px 0;
+}
+
+.container {
+  display: flex;
+}
+
+#main-img {
+  width: 821.11px;
+  height: 586.53px;
+  margin-right: 60px;
+}
+
+.content {
+  margin: 150px 45px;
+}
+
+.content h1 {
+  font: 48px/61px var(--lore);
+}
+
+.content p {
+  font: 24px/29px var(--montserrat);
+  max-width: 410px;
+  margin: 50px 0;
+}
+
+.content a {
+  font-weight: bold;
+  text-decoration: none;
+  font: 18px/22px var(--montserrat);
+  color: white;
+  margin-right: 15px;
+}
