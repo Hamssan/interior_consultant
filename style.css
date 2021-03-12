@@ -22,7 +22,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 35px 48px;
+  margin: 35px 40px;
 }
 
 header span {
@@ -38,6 +38,7 @@ header li {
   font: 18px/22px var(--montserrat);
   margin: 0 20px;
   list-style: none;
+  cursor: pointer;
 }
 
 header li:hover,
@@ -48,6 +49,7 @@ header li:hover,
 
 .container {
   display: flex;
+  margin-bottom: 200px;
 }
 
 #main-img {
@@ -76,4 +78,48 @@ header li:hover,
   font: 18px/22px var(--montserrat);
   color: white;
   margin-right: 15px;
+}
+
+.designer {
+  border: 1px solid transparent;
+  background-color: rgb(24, 23, 25, 1);
+  position: absolute;
+  top: 618px;
+  left: 827px;
+  padding: 25px;
+  width: 410px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 0.5);
+}
+
+.designer img {
+  border-radius: 30px;
+  width: 55px;
+}
+
+.designer h2 {
+  font: 14px/17px var(--montserrat);
+  font-weight: 500;
+}
+
+.designer span {
+  font: 12px/14px var(--montserrat);
+  color: rgb(130, 130, 130, 1);
+}
+
+.designer h2 {
+  margin-left: 75px;
+  margin-top: -55px;
+}
+
+.designer span {
+  display: inline-block;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.designer h3 {
+  font: 24px/30px var(--lore);
+  max-width: 287px;
+  font-weight: 700;
+  margin-top: 30px;
 }
