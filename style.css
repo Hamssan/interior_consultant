@@ -17,6 +17,7 @@
 body {
   background: rgb(24, 23, 25, 1);
   color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -50,7 +51,8 @@ header .burger {
 header li:hover,
 .active {
   border-bottom: 2px solid white;
-  padding: 4px 0;
+  /* padding: 4px 0; */
+  font-weight: bold;
 }
 
 .container {
@@ -221,12 +223,119 @@ header li:hover,
   }
 }
 
-@media screen and (max-width: 716px) {
-  header ul {
-    display: none;
-  }
+@media screen and (max-width: 720px) {
 
   header .burger {
     display: block;
+    z-index: 6;
+    margin-right: -65px;
+    transition: opacity .3s;
+  }
+
+  .burger:hover {
+    opacity: .6;
+  }
+
+  .main-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 23, 25, 1);
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    padding-top: 150px;
+    transform: translateX(800px);
+    transition: transform 1s ease-in-out;
+  }
+
+  .main-menu li {
+    margin: 25px 0;  
+  }
+
+  .designer {
+    left: 250px;
+    top: 890px;
+  }
+
+
+}
+
+@media screen and (max-width: 585px) {
+  #main-img {
+    width: 500px;
+     height: 450px;
+  } 
+
+  .designer {
+    left: 200px;
+  }
+
+  .main-menu {
+    margin-left: -30px;
   }
 }
+
+@media screen and (max-width: 526px) {
+  .designer {
+    left: 170px;
+  }
+}
+
+ul.show-menu {
+  transform: translateX(100px);
+}
+
+@media screen and (max-width: 484px) {
+  
+  #main-img {
+    width: 430px;
+    height: 430px;
+  }
+  
+  .designer {
+    left: 120px;
+  }
+
+}
+
+@media screen and (max-width: 446px) {
+  
+  #main-img {
+    width: 400px;
+    height: 390px;
+  }
+  
+  .designer {
+    left: 65px;
+    top: 820px;
+    }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .content a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  #main-img {
+    width: 380px;
+    height: 350px;
+  }
+
+  .designer {
+    left: 30px;
+    top: 818px;
+    }
+}
+
+
